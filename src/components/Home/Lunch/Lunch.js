@@ -13,7 +13,7 @@ const Lunch = () => {
   }, []);
   return (
     <div className="container mt-5">
-      <Row md={3} className="g-5">
+      <Row className="g-5" style={{ width: "100%" }}>
         {meals.map((meal) => (
           <NoonMeal key={meal.id} meal={meal}></NoonMeal>
         ))}

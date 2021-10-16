@@ -51,7 +51,7 @@ https://i.ibb.co/BsmJsFK/services-shape.png
     },
   ];
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="service-container">
         {services.map((service) => (
           <Service key={service.id} service={service}></Service>

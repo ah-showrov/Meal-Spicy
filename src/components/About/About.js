@@ -17,9 +17,9 @@ const About = () => {
       <div className=" d-md-flex">
         <div className="aboutCard mx-2 ">
           <div className="aboutImgDiv ">
-            <img src={image1} alt="" />
+            <img className="aboutImage" src={image1} alt="" />
           </div>
-          <div className="mt-2 d-flex ps-2">
+          <div className="mt-3 d-flex ps-2">
             <div>
               <FontAwesomeIcon className="fs-3 text-danger me-2" icon={faBus} />
             </div>
@@ -34,9 +34,9 @@ const About = () => {
         </div>
         <div className="aboutCard mx-2">
           <div className="aboutImgDiv  ">
-            <img src={image3} alt="" />
+            <img className="aboutImage" src={image3} alt="" />
           </div>
-          <div className="mt-2 d-flex ps-2">
+          <div className="mt-3 d-flex ps-2 ">
             <div>
               <FontAwesomeIcon
                 className="fs-3 text-danger me-2"
@@ -54,9 +54,9 @@ const About = () => {
         </div>
         <div className="aboutCard mx-2">
           <div className="aboutImgDiv  ">
-            <img src={image2} alt="" />
+            <img className="aboutImage" src={image2} alt="" />
           </div>
-          <div className="mt-2 d-flex ps-2">
+          <div className="mt-3 d-flex ps-2">
             <div>
               <FontAwesomeIcon
                 className="fs-3 text-danger me-2"

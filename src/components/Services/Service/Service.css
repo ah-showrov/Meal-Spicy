@@ -4,6 +4,7 @@
   padding: 20px 10px 10px;
   background-image: url("../../../images/services/services-shape.png");
   border-radius: 10px;
+  transition: 0.5s;
 }
 .service:hover {
   background-color: #dc3545;

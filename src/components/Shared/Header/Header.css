@@ -26,3 +26,23 @@
 .menu-box {
   width: 100%;
 }
+.menuText {
+  border-bottom: #fff !important;
+}
+.menuText:hover {
+  color: #e43544 !important;
+  border-bottom: 1px solid #e43544 !important;
+}
+
+.loginStyle,
+.loginText {
+  transition: 0.4s;
+}
+.loginStyle:hover {
+  background-color: #e43544 !important;
+  transition: 0.4s;
+}
+.loginStyle:hover .loginText {
+  color: #fff !important;
+  transition: 0.4s;
+}

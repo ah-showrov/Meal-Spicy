@@ -1,6 +1,12 @@
+/* .mealColumn {
+  height: 360px;
+  margin-top: 15px;
+}
+
 .mealCard {
   padding: 10px;
   border-radius: 10px;
+  height: 340px;
 }
 .mealCard:hover {
   box-shadow: 0 0 8px rgb(218, 216, 216);
@@ -15,7 +21,17 @@
 .imgDiv .imgStyle {
   width: 80%;
 }
+.imgStyle {
+  transition: 0.6s;
+}
 .imgStyle:hover {
   transform: scale(1.1);
   transition: 0.6s;
 }
+
+@media only screen and (max-width: 576px) {
+  .mealColumn {
+    height: 360px !important;
+  }
+}
+ */

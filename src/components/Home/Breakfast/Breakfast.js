@@ -12,8 +12,8 @@ const Breakfast = () => {
       .then((data) => setMeals(data));
   }, []);
   return (
-    <div className="container mt-5">
-      <Row md={3} className="g-5">
+    <div className="container mt-5  ">
+      <Row className="g-5 " style={{ width: "100%" }}>
         {meals.map((meal) => (
           <MorningMeal key={meal.id} meal={meal}></MorningMeal>
         ))}

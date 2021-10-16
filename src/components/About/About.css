@@ -1,4 +1,7 @@
 .aboutImgDiv {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
 }
 .aboutImgDiv > img {
   width: 100%;
@@ -8,4 +11,11 @@
 }
 .aboutCard:hover {
   box-shadow: 0 0 8px rgb(218, 216, 216);
+}
+.aboutImage:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.aboutImage {
+  transition: 0.5s;
 }

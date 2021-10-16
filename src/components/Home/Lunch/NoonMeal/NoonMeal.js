@@ -5,8 +5,8 @@ import "./NoonMeal.css";
 const NoonMeal = ({ meal }) => {
   const { id, name, image, price } = meal;
   return (
-    <Col>
-      <div className="mealCard h-100">
+    <Col md={4} sm={12} className="mealColumn">
+      <div className="mealCard ">
         <div className="imgDiv">
           <img className="imgStyle" src={image} alt="" />
         </div>

@@ -2,13 +2,12 @@ import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Shared/Header/Header";
 import Home from "./components/Home/Home/Home";
-import Breakfast from "./components/Home/Breakfast/Breakfast";
 import NotFound from "./components/NotFound/NotFound";
-import Lunch from "./components/Home/Lunch/Lunch";
-import Dinner from "./components/Home/Dinner/Dinner";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Shared/Footer/Footer";
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 
 function App() {
   return (
@@ -28,6 +27,12 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signup">
+            <Signup></Signup>
           </Route>
 
           <Route path="*">

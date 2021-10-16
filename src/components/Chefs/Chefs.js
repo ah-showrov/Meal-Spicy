@@ -42,7 +42,7 @@ const Chefs = () => {
         ad nostrum nihil earum laborum deserunt explicabo velit voluptatibus,
         nam eveniet!
       </p>
-      <div className="d-md-flex mt-5">
+      <div className="d-md-flex  mt-5">
         {chefs.map((chef) => (
           <div className="chefDiv mx-2 " key={chef.id} chef={chef}>
             <div className="chefImgDiv">

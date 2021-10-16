@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <Navbar className=" nav-container container" expand="lg">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand>
         <img
           alt=""
           src={logo}
@@ -24,23 +24,39 @@ const Header = () => {
           style={{ maxHeight: "240px" }}
           navbarScroll
         >
-          <Nav.Link as={Link} to="/home" className="mt-1 text-dark">
+          <Nav.Link as={Link} to="/home" className="mt-1 text-dark menuText">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/services" className="mt-1 text-dark">
+          <Nav.Link
+            as={Link}
+            to="/services"
+            className="mt-1 text-dark menuText"
+          >
             Services
           </Nav.Link>
-          <Nav.Link as={Link} to="/contact" className=" mt-1 text-dark">
+          <Nav.Link
+            as={Link}
+            to="/contact"
+            className=" mt-1 text-dark menuText"
+          >
             Contact
           </Nav.Link>
 
-          <Button className="btn-style  bg-transparent text-dark border-danger ms-3 mt-1">
-            {" "}
-            Login
+          <Button className="btn-style loginStyle  bg-transparent  border-danger ms-3 mt-1">
+            <Nav.Link
+              as={Link}
+              to="/login"
+              className=" p-0 text-dark loginText "
+            >
+              {" "}
+              Login
+            </Nav.Link>
           </Button>
           <Button className="btn-style  bg-danger ms-3 mt-1  border-0">
-            {" "}
-            Sign up
+            <Nav.Link as={Link} to="/signup" className=" text-white p-0">
+              {" "}
+              Sign up
+            </Nav.Link>
           </Button>
         </Nav>
       </Navbar.Collapse>

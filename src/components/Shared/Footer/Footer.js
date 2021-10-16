@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   return (
     <div className="pt-5  mt-5">
-      <Row className="upperFooterDiv px-5 ">
+      <Row md={4} xs={1} className="upperFooterDiv px-5 ">
         <Col>
           <div>
             <img className="" width="180" height="60" src={logo} alt="" />
