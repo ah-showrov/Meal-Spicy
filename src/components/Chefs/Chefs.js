@@ -1,7 +1,6 @@
 import React from "react";
 import "./Chefs.css";
 
-import Chef from "./Chef/Chef";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,

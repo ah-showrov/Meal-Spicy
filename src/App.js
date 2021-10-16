@@ -8,6 +8,7 @@ import Lunch from "./components/Home/Lunch/Lunch";
 import Dinner from "./components/Home/Dinner/Dinner";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Shared/Footer/Footer";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

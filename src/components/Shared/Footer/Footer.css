@@ -1,0 +1,56 @@
+.footer-form {
+  width: 100%;
+  padding: 5px 10px;
+}
+.email-field {
+  width: 80%;
+}
+.email-field:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+.email-btn {
+  width: 15%;
+}
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-list > li {
+  font-weight: 600;
+  margin-top: 20px;
+}
+li:hover {
+  color: rgb(202, 31, 31);
+}
+.footerIcon {
+  font-size: 1.2em;
+}
+.iconDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  background-color: #d32637;
+  color: white;
+}
+
+.iconDiv:hover {
+  background-color: white;
+  border: #d32637;
+  color: #d32637;
+  border: 1px solid #d32637;
+  transition: 0.5s;
+}
+.lowerFooterDiv {
+  width: 100%;
+  height: 120px;
+  background-color: #d32637;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: white;
+  padding-top: 45px;
+}
