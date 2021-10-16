@@ -1,0 +1,11 @@
+.aboutImgDiv {
+}
+.aboutImgDiv > img {
+  width: 100%;
+}
+.aboutCard {
+  border-radius: 15px;
+}
+.aboutCard:hover {
+  box-shadow: 0 0 8px rgb(218, 216, 216);
+}

@@ -1,0 +1,14 @@
+/* .category-section {
+  height: 100vh;
+} */
+.category-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  display: inline-block;
+  font-weight: 600;
+}
+.category-link:hover {
+  color: rgb(202, 31, 31);
+  border-bottom: 1px solid rgb(202, 31, 31);
+}
