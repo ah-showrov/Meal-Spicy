@@ -1,3 +1,7 @@
+.about-main-container {
+  margin-top: 100px;
+}
+
 .aboutImgDiv {
   overflow: hidden;
   width: 100%;
@@ -8,6 +12,7 @@
 }
 .aboutCard {
   border-radius: 15px;
+  margin-top: 25px;
 }
 .aboutCard:hover {
   box-shadow: 0 0 8px rgb(218, 216, 216);

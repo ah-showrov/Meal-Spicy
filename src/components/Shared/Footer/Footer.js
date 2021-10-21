@@ -10,6 +10,8 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -58,8 +60,16 @@ const Footer = () => {
           <h4 className="text-danger mb-4">Services</h4>
           <ul className="footer-list">
             <li>Support</li>
-            <li>About</li>
-            <li>Chefs</li>
+            <li>
+              <HashLink to="/home#about" className="footerLink">
+                About
+              </HashLink>
+            </li>
+            <li>
+              <HashLink to="/home#chefs" className="footerLink">
+                Chefs
+              </HashLink>
+            </li>
             <li>Blogs</li>
             <li>Privacy Policy</li>
           </ul>
@@ -67,11 +77,19 @@ const Footer = () => {
         <Col className="mt-4">
           <h4 className="text-danger">Quick Links</h4>
           <ul className="footer-list">
-            <li>Services</li>
+            <li>
+              <Link as={HashLink} to="/services" className="footerLink">
+                Services
+              </Link>
+            </li>
             <li>Food Collection</li>
             <li>Online Order</li>
             <li>Blogs</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/contact" className="footerLink">
+                Contact{" "}
+              </Link>{" "}
+            </li>
           </ul>
         </Col>
         <Col className="mt-4">

@@ -1,11 +1,11 @@
 import React from "react";
 import Service from "./Service/Service";
 import "./Services.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
-  /* 
-https://i.ibb.co/BsmJsFK/services-shape.png 
-*/
   const services = [
     {
       id: 301,
@@ -50,9 +50,31 @@ https://i.ibb.co/BsmJsFK/services-shape.png
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad nostrum nihil earum laborum deserunt explicabo velit voluptatibus,nam eveniet!",
     },
   ];
+  window.scrollTo(0, 0);
+
   return (
-    <div className="container mt-5">
-      <div className="service-container">
+    <div id="services" className=" mb-5">
+      <div className="bannerDiv">
+        <div className="serviceLinkDiv">
+          <div className="verticalDiv"></div>
+          <div>
+            <h1 className="serviceText">Services</h1>
+            <div className="d-flex align-items-center">
+              <Link to="/home" className="serviceLinkStyle">
+                Home
+              </Link>{" "}
+              <FontAwesomeIcon
+                className="serviceArrowStyle"
+                icon={faAngleRight}
+              />
+              <Link to="/services" className="serviceLinkStyle">
+                Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" container service-container">
         {services.map((service) => (
           <Service key={service.id} service={service}></Service>
         ))}

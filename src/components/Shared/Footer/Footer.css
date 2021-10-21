@@ -57,3 +57,11 @@ li:hover {
   color: white;
   padding-top: 45px;
 }
+
+.footerLink {
+  text-decoration: none;
+  color: black;
+}
+.footerLink:hover {
+  color: #d32637;
+}

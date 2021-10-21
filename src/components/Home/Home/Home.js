@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
 
 const Home = () => {
+  window.scrollTo(0, 0);
   return (
     <div>
       <Banner></Banner>

@@ -34,8 +34,10 @@ const Chefs = () => {
       image: "https://i.ibb.co/FDXdfBn/7.jpg",
     },
   ];
+  window.scrollTo(0, 0);
+
   return (
-    <div className="container my-5">
+    <div id="chefs" className="container chefs-main-Container">
       <h1 className="text-center">Our Special Chefs</h1>
       <p className="text-center mt-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Placeat
@@ -44,9 +46,9 @@ const Chefs = () => {
       </p>
       <div className="d-md-flex  mt-5">
         {chefs.map((chef) => (
-          <div className="chefDiv mx-2 " key={chef.id} chef={chef}>
+          <div className="chefDiv mx-2 mt-5" key={chef.id} chef={chef}>
             <div className="chefImgDiv">
-              <img className="img-fluid" src={chef.image} alt="" />
+              <img className="chefImage" src={chef.image} alt="" />
 
               <div className="chefCardMiddle text-center text-light pt-2">
                 <h4 className="">{chef.name}</h4>
