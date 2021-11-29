@@ -3,8 +3,12 @@ import "./Header.css";
 import { Nav, Navbar, Button } from "react-bootstrap";
 import logo from "../../../images/Logo (2).png";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { logOut, user } = useAuth();
+  console.log(user);
+
   return (
     <div className=" nav-container container-fluid bg-white">
       <Navbar className="  container" expand="lg">
@@ -42,23 +46,34 @@ const Header = () => {
             >
               Contact
             </Nav.Link>
-
-            <Button className="btn-style loginStyle  bg-transparent  border-danger ms-3 mt-1">
-              <Nav.Link
-                as={Link}
-                to="/login"
-                className=" p-0 text-dark loginText "
+            {user.email ? (
+              <Button
+                onClick={logOut}
+                className="btn-style loginStyle  text-dark loginText bg-transparent  border-danger ms-3 mt-1"
               >
                 {" "}
-                Login
-              </Nav.Link>
-            </Button>
-            <Button className="btn-style  bg-danger ms-3 mt-1  border-0">
-              <Nav.Link as={Link} to="/signup" className=" text-white p-0">
-                {" "}
-                Sign up
-              </Nav.Link>
-            </Button>
+                Logout
+              </Button>
+            ) : (
+              <>
+                <Button className="btn-style loginStyle  bg-transparent  border-danger ms-3 mt-1">
+                  <Nav.Link
+                    as={Link}
+                    to="/login"
+                    className=" p-0 text-dark loginText "
+                  >
+                    {" "}
+                    Login
+                  </Nav.Link>
+                </Button>
+                <Button className="btn-style  bg-danger ms-3 mt-1  border-0">
+                  <Nav.Link as={Link} to="/signup" className=" text-white p-0">
+                    {" "}
+                    Sign up
+                  </Nav.Link>
+                </Button>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -11,7 +11,8 @@ const MorningMeal = ({ meal }) => {
           <img className="imgStyle" src={image} alt="" />
         </div>
         <h5 className="text-center">{name}</h5>
-        <h6 className="text-center">{price}$</h6>
+        <h6 className="text-center text-danger">{price}$</h6>
+        <div className="text-center mb-4"></div>
       </div>
     </Col>
   );

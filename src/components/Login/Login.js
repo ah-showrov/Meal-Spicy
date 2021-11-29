@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import useFirebase from "../hooks/useFirebase";
+import useAuth from "../hooks/useAuth";
 import "./Login.css";
 
 const Login = () => {
-  const { signInWithGoogle } = useFirebase();
+  const { handleUserSignInWithEmail, error, signInWithGoogle } = useAuth();
+  const [userInfo, setUserInfo] = useState({});
+  const handleOnBlur = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
+    const newUserInfo = { ...userInfo };
+    newUserInfo[field] = value;
+    setUserInfo(newUserInfo);
+  };
+
+  const handleOnSubmit = (e) => {
+    handleUserSignInWithEmail(userInfo.email, userInfo.password);
+
+    e.preventDefault();
+  };
   return (
     <div className="login-main-Container">
-      <Form className="form-container mx-auto mt-5">
+      <Form onSubmit={handleOnSubmit} className="form-container mx-auto mt-5">
         {/* <h3 className="mb-3">Log in</h3> */}
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
+            name="email"
+            onBlur={handleOnBlur}
             className="loginInput border-top-0 border-end-0 border-start-0 rounded-0"
             type="email"
             placeholder="Enter email"
@@ -19,6 +35,8 @@ const Login = () => {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control
+            name="password"
+            onBlur={handleOnBlur}
             className="loginInput border-top-0  border-end-0 border-start-0 rounded-0"
             type="password"
             placeholder="Password"
@@ -39,6 +57,9 @@ const Login = () => {
             Google login
           </Button>
           <Button className="bg-dark border-0 ms-4">Github login</Button>
+          <p>
+            <small className="text-danger fw-bold"> {error} </small>
+          </p>
         </div>
       </div>
     </div>

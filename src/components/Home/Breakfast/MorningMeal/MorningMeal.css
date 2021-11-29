@@ -1,11 +1,11 @@
 .mealColumn {
-  height: 360px;
+  height: 370px;
 }
 
 .mealCard {
   padding: 10px;
   border-radius: 20px;
-  height: 340px;
+  height: 350px;
   width: 100%;
 }
 .mealCard:hover {

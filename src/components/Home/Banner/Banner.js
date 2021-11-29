@@ -7,7 +7,7 @@ import slider3 from "../../../images/slider/banner-slider3.png";
 
 const Banner = () => {
   return (
-    <div className=" banner-container  container  ">
+    <div className=" banner-container  container mx-auto  ">
       <div className="left-part  py-5">
         <h1 className="banner-heading">
           Get <span className="text-danger">Meal Spicy </span> Food by Ordering
